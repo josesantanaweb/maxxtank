@@ -3,17 +3,17 @@ const AboutUs = () => {
     <div>
       <div className="flex justify-center py-10 bg-slate-200">
         <div className="container flex justify-start">
-          <h4 className="text-4xl font-bold text-gray-800">SOBRE MAXXTANK</h4>
+          <h4 className="text-5xl font-medium text-gray-800">SOBRE MAXXTANK</h4>
         </div>
       </div>
       <div className="relative h-[1000px] w-full">
-        <img src="/images/banner-about-us.png" alt="banner" className="h-full" />
+        <img src="/images/banner-about-us.png" alt="banner" className="w-full h-full" />
       </div>
       <div className="flex justify-center py-10 bg-slate-200">
         <div className="container">
           <div className="flex justify-center gap-10 mb-14">
             <img src="/images/logo.svg" alt="banner" className="w-[160px]" />
-            <h4 className="text-4xl text-gray-800">
+            <h4 className="text-5xl text-gray-800">
               Experiencia, tecnología e ingenería para ofrecer soluciones adaptadas a cada proyecto.
             </h4>
           </div>

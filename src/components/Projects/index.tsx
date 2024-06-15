@@ -25,7 +25,7 @@ const Projects = () => {
   return (
     <div className="flex justify-center py-20">
       <div className="container">
-        <h4 className="mb-20 text-4xl font-bold text-gray-800">PROYECTOS</h4>
+        <h4 className="mb-20 text-5xl font-medium text-gray-800">PROYECTOS</h4>
         <div className="grid items-center grid-cols-4 gap-8">
           {DATA.map((item, index) => (
             <div className="flex flex-col" key={index}>
