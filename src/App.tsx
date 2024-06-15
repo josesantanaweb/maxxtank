@@ -1,10 +1,10 @@
-import AboutUs from '@/components/AboutUs'
-import Apps from '@/components/Apps'
 import Header from '@/components/Common/Header'
-import MainBanner from '@/components/MainBanner'
-import Projects from '@/components/Projects'
-import Tanks from '@/components/Tanks'
-import Why from '@/components/Why'
+import AboutUs from '@/components/Home/AboutUs'
+import Apps from '@/components/Home/Apps'
+import MainBanner from '@/components/Home/MainBanner'
+import Projects from '@/components/Home/Projects'
+import Tanks from '@/components/Home/Tanks'
+import Why from '@/components/Home/Why'
 
 function App() {
   return (
