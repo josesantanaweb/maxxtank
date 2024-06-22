@@ -1,4 +1,5 @@
 import { IoIosClose, IoIosSearch } from 'react-icons/io'
+import { Link } from 'react-router-dom'
 
 const MENU_DATA = [
   {
@@ -7,19 +8,19 @@ const MENU_DATA = [
   },
   {
     name: 'Aplicaciones',
-    url: '/Aplicaciones',
+    url: '/aplicaciones',
   },
   {
     name: 'Tanques',
-    url: '/Tanques',
+    url: '/tanques',
   },
   {
     name: 'Proyectos',
-    url: '/Proyectos',
+    url: '/proyectos',
   },
   {
     name: 'Contacto',
-    url: '/Contacto',
+    url: '/contacto',
   },
 ]
 
@@ -39,13 +40,13 @@ const Header = () => {
           <img src="/images/logo.svg" className="w-[120px]" />
           <nav className="flex gap-4">
             {MENU_DATA.map((item, index) => (
-              <a
+              <Link
                 key={index}
-                href={item.url}
+                to={item.url}
                 className="px-4 text-gray-800 cursor-pointer hover:text-gray-600 hover:font-bold"
               >
                 {item.name}
-              </a>
+              </Link>
             ))}
           </nav>
           <span className="text-gray-800">
