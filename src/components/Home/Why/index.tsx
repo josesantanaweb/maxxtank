@@ -31,7 +31,7 @@ const Why = () => {
   return (
     <div className="flex justify-center py-20">
       <div className="container">
-        <h4 className="mb-20 text-[80px] font-[900] text-gray-800">LOS 5 POR QUÉ DE MAXX TANK</h4>
+        <h4 className="mb-20 text-[80px] font-[900] text-black">LOS 5 POR QUÉ DE MAXX TANK</h4>
         <div className="flex flex-col">
           {DATA.map((item, index) => (
             <div

@@ -1,22 +1,20 @@
+import Button from '@/components/Common/Button'
+
 const DATA = [
   {
     title: 'Tecnología australiana',
-    deescription:
+    description:
       'Material impermeabilizante independiente de la estructura metalica de soporte, lo que evita el contacto directo del agua con la estructura.',
   },
   {
     title: 'Norma AWWA D-103-09',
-    deescription:
+    description:
       'Los tanques son fabricados de acuerdo a esta norma “Factory Coated Bolted Steel Tanks for Water Storage”.',
   },
   {
     title: 'Paneles RV8',
-    deescription:
+    description:
       'Páneles de acero galvanizado y corrugados recubiertos con ProteCoat y unidos con pernos de alta resistencia,. ',
-  },
-  {
-    title: 'Estructura resistente y funcional para el almacenamiento de agua potable',
-    deescription: 'lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt..',
   },
 ]
 
@@ -24,8 +22,11 @@ const Storage = () => {
   return (
     <div className="flex flex-col items-center justify-center py-20 bg-white">
       <div className="container mb-10">
-        <h4 className="mb-2 text-5xl font-medium text-gray-800">ALMACENAMIENTO DE AGUA POTABLE</h4>
-        <p className="mb-10 text-2xl text-gray-800">
+        <h4 className="mb-8 text-[83px] font-[900] text-black leading-[80px]">
+          ALMACENAMIENTO
+          <br /> DE AGUA POTABLE
+        </h4>
+        <p className="mb-10 text-[53px] text-black leading-[50px]">
           Tanques modulares pernados con recubrimiento para almacenamiento de agua potable.
         </p>
         <img src="/images/app-tank-2.png" alt="tank" className="w-full h-[800px]" />
@@ -34,10 +35,18 @@ const Storage = () => {
         <div className="grid grid-cols-4 gap-3">
           {DATA.map((item, index) => (
             <div className="flex flex-col" key={index}>
-              <h4 className="mb-3 text-2xl font-medium text-gray-800">{item.title}</h4>
-              <p className="text-base text-gray-800">{item.deescription}</p>
+              <h4 className="mb-3 text-[27px] font-[900] text-black">{item.title}</h4>
+              <p className="text-base text-black">{item.description}</p>
             </div>
           ))}
+          <div className="flex flex-col">
+            <h4 className="mb-5 text-[27px] font-[900] text-black leading-[30px]">
+              Estructura resistente y funcional para el almacenamiento de agua potable
+            </h4>
+            <div className="flex justify-start w-full">
+              <Button>Cotizar</Button>
+            </div>
+          </div>
         </div>
       </div>
     </div>

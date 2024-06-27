@@ -29,7 +29,7 @@ const Header = () => {
     <header className="">
       <div className="flex items-center justify-center bg-gray-200">
         <div className="container relative flex justify-center p-3">
-          <p className="text-sm font-semibold text-gray-800">
+          <p className="text-sm font-semibold text-black">
             Tel: 314 245 2758 gerencia@maxxtank.com.co <span className="underline">Contáctanos</span>
           </p>
           <div className="absolute right-0 cursor-pointer">
@@ -45,13 +45,13 @@ const Header = () => {
               <Link
                 key={index}
                 to={item.url}
-                className="px-4 text-gray-800 transition-all border-b-2 border-transparent cursor-pointer hover:text-gray-600 hover:border-gray-600"
+                className="px-4 text-black transition-all border-b-2 border-transparent cursor-pointer hover:text-gray-600 hover:border-gray-600"
               >
                 {item.name}
               </Link>
             ))}
           </nav>
-          <span className="text-gray-800">
+          <span className="text-black">
             <IoIosSearch size={24} />
           </span>
         </div>
