@@ -27,10 +27,12 @@ const MENU_DATA = [
 const Header = () => {
   return (
     <header className="">
-      <div className="flex items-center justify-center bg-slate-200">
-        <div className="container flex justify-between p-3">
-          <p className="text-sm text-gray-800 text-end">Tel: 314 245 2758 gerencia@maxxtank.com.co Contáctanos</p>
-          <div className="cursor-pointer">
+      <div className="flex items-center justify-center bg-gray-200">
+        <div className="container relative flex justify-center p-3">
+          <p className="text-sm font-semibold text-gray-800">
+            Tel: 314 245 2758 gerencia@maxxtank.com.co <span className="underline">Contáctanos</span>
+          </p>
+          <div className="absolute right-0 cursor-pointer">
             <IoIosClose size={24} />
           </div>
         </div>
@@ -43,7 +45,7 @@ const Header = () => {
               <Link
                 key={index}
                 to={item.url}
-                className="px-4 text-gray-800 cursor-pointer hover:text-gray-600 hover:font-bold"
+                className="px-4 text-gray-800 transition-all border-b-2 border-transparent cursor-pointer hover:text-gray-600 hover:border-gray-600"
               >
                 {item.name}
               </Link>

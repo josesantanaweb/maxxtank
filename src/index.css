@@ -43,7 +43,7 @@ body {
   content: "";
   width: 100%;
   height: 1px;
-  top: 250px;
+  top: 50%;
   left: 0;
   border: 1px dashed #7b7b7b;
 }
@@ -54,6 +54,6 @@ body {
   width: 1px;
   height: 100%;
   top: 0;
-  left: 760px;
+  left: 50%;
   border: 1px dashed #7b7b7b;
 }

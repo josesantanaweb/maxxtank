@@ -25,14 +25,14 @@ const Projects = () => {
   return (
     <div className="flex justify-center py-20">
       <div className="container">
-        <h4 className="mb-20 text-5xl font-medium text-gray-800">PROYECTOS</h4>
+        <h4 className="mb-20 text-[83px] font-[900] text-black">PROYECTOS</h4>
         <div className="grid items-center grid-cols-4 gap-8">
           {DATA.map((item, index) => (
             <div className="flex flex-col" key={index}>
               <img src={`/images/${item.imagen}`} alt="" className="mb-3" />
-              <h4 className="mb-3 text-sm font-semibold text-gray-800">{item.date}</h4>
-              <p className="mb-3 text-lg text-gray-800">{item.description}</p>
-              <a href="#" className="text-base font-semibold text-gray-800">
+              <h4 className="mb-3 text-sm font-semibold text-black">{item.date}</h4>
+              <p className="mb-3 text-lg text-black font-[900]">{item.description}</p>
+              <a href="#" className="text-base font-[900] text-black">
                 Ver
               </a>
             </div>

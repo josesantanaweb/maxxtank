@@ -31,15 +31,15 @@ const Why = () => {
   return (
     <div className="flex justify-center py-20">
       <div className="container">
-        <h4 className="mb-20 text-5xl font-medium text-gray-800">LOS 5 POR QUÉ DE MAXX TANK</h4>
+        <h4 className="mb-20 text-[80px] font-[900] text-gray-800">LOS 5 POR QUÉ DE MAXX TANK</h4>
         <div className="flex flex-col">
           {DATA.map((item, index) => (
             <div
               key={index}
-              className="grid items-center justify-between grid-cols-3 p-10 border-t border-gray-400 last:border-b"
+              className="grid items-center justify-between grid-cols-3 px-10 py-6 border-t border-gray-400 last:border-b"
             >
-              <h4 className="text-lg font-semibold">{item.title}</h4>
-              <p className="block text-sm">{item.description}</p>
+              <h4 className="text-lg font-[900]">{item.title}</h4>
+              <p className="block text-[16px]">{item.description}</p>
               <span className="flex justify-end cursor-pointer">
                 <IoIosAdd size={28} />
               </span>
