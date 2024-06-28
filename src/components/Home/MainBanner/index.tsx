@@ -4,7 +4,7 @@ import { IoIosPlay } from 'react-icons/io'
 const MainBanner = () => {
   return (
     <div className="flex justify-center mb-10">
-      <div className="flex items-center justify-between h-[600px] pl-20 gap-10">
+      <div className="container flex items-center justify-between h-[600px] gap-10">
         <div className="flex flex-col items-start justify-center w-[35%] h-full">
           <h4 className="mb-3 text-[64px] font-[900] text-black leading-[65px]">
             EL AGUA
