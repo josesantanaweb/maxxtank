@@ -1,3 +1,5 @@
+import ContactForm from '@/components/Common/ContactForm'
+import Footer from '@/components/Common/Footer'
 import AboutUs from '@/components/Home/AboutUs'
 import Apps from '@/components/Home/Apps'
 import MainBanner from '@/components/Home/MainBanner'
@@ -14,6 +16,8 @@ const HomePage = () => {
       <Apps />
       <Tanks />
       <Projects />
+      <ContactForm />
+      <Footer />
     </main>
   )
 }

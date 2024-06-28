@@ -29,7 +29,7 @@ const DATA = [
 
 const Apps = () => {
   return (
-    <div className="flex justify-center py-20 bg-gray-200">
+    <div className="flex justify-center py-20 bg-gray-100">
       <div className="container">
         <h4 className="mb-20 text-[70px] font-[900] text-black">APLICACIONES</h4>
         <div className="grid items-center grid-cols-2 gap-12 apps-separator">

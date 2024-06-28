@@ -27,7 +27,7 @@ const MENU_DATA = [
 const Header = () => {
   return (
     <header className="">
-      <div className="flex items-center justify-center bg-gray-200">
+      <div className="flex items-center justify-center bg-gray-100">
         <div className="container relative flex justify-center p-3">
           <p className="text-sm font-semibold text-black">
             Tel: 314 245 2758 gerencia@maxxtank.com.co <span className="underline">Contáctanos</span>

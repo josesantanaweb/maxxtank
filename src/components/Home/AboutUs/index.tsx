@@ -1,7 +1,7 @@
 const AboutUs = () => {
   return (
     <div>
-      <div className="flex justify-center py-10 bg-gray-200">
+      <div className="flex justify-center py-10 bg-gray-100">
         <div className="container flex justify-start">
           <h4 className="text-[80px] font-[900] text-black">SOBRE MAXXTANK</h4>
         </div>
@@ -9,7 +9,7 @@ const AboutUs = () => {
       <div className="relative h-[1000px] w-full">
         <img src="/images/banner-about-us.png" alt="banner" className="w-full h-full" />
       </div>
-      <div className="flex justify-center py-10 bg-gray-200">
+      <div className="flex justify-center py-10 bg-gray-100">
         <div className="container">
           <div className="flex justify-center gap-10 mb-14">
             <img src="/images/logo.svg" alt="banner" className="w-[160px]" />
