@@ -46,6 +46,7 @@ body {
   top: 50%;
   left: 0;
   border: 1px dashed #7b7b7b;
+  @apply hidden 2xl:block;
 }
 
 .apps-separator:before {
@@ -56,4 +57,5 @@ body {
   top: 0;
   left: 50%;
   border: 1px dashed #7b7b7b;
+  @apply hidden 2xl:block;
 }

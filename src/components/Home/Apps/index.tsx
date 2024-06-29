@@ -32,7 +32,7 @@ const Apps = () => {
     <div className="flex justify-center py-20 bg-gray-100">
       <div className="container">
         <h4 className="mb-20 text-[70px] font-[900] text-black">APLICACIONES</h4>
-        <div className="grid items-center grid-cols-2 gap-12 apps-separator">
+        <div className="grid items-center grid-cols-1 gap-12 2xl:grid-cols-2 apps-separator">
           {DATA.map((item, index) => (
             <div className="flex items-start gap-8" key={index}>
               <img src={`/images/${item.image}`} alt="Agua Potable" className="object-cover w-[330px] h-[230px]" />
