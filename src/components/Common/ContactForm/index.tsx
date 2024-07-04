@@ -68,7 +68,7 @@ const ContactPage = () => {
               <textarea
                 placeholder="Mensaje"
                 className="w-full px-4 py-2 bg-gray-100 border border-black placeholder:text-black focus:outline-none focus:ring-2 focus:ring-blue-400"
-                rows="4"
+                rows={4}
               ></textarea>
             </div>
             <Button>Enviar</Button>
