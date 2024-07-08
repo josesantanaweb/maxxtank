@@ -1,0 +1,16 @@
+.imageGalery {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: baseline;
+}
+.imageGalery .imageGaleryItem {
+    flex: 3 3 25%;
+    height: 100%;
+    width: 100%;
+}
+.imageGalery .imageGaleryItem img {
+    max-width: 100%;
+    height: 100%;
+    width: 100%;
+}

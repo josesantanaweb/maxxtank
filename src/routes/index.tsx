@@ -1,4 +1,4 @@
-import { AppsPage, HomePage, ProjectsPage, ContactPage } from '@/pages'
+import { AppsPage, HomePage, ProjectsPage, ContactPage, TanksPage } from '@/pages'
 
 export const routes = [
   {
@@ -16,5 +16,9 @@ export const routes = [
   {
     path: '/contacto',
     element: <ContactPage />,
+  },
+  {
+    path: '/tanques',
+    element: <TanksPage />,
   },
 ]
