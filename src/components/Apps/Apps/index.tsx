@@ -2,6 +2,7 @@ import { ApplicationData } from "../types/types";
 
 interface ApplicationsProps {
   tanksData?: ApplicationData[];
+  title? : string
 }
 
 
@@ -24,12 +25,12 @@ const DATA: ApplicationData[] = [
   },
 ]
 
-const Applications: React.FC<ApplicationsProps> = ({ tanksData }) => {
+const Applications: React.FC<ApplicationsProps> = ({ tanksData , title}) => {
   const tanksDataToUse = tanksData || DATA;
   return (
     <div className="flex justify-center py-20 bg-white">
       <div className="container">
-        <h4 className="mb-20 text-[83px] font-[900] text-black">APLICACIONES</h4>
+        <h4 className="mb-20 text-[83px] font-[900] text-black">{title || 'APLICACIONES'}</h4>
         <div className="grid items-center grid-cols-4 gap-12">
           {tanksDataToUse.map((item, index) => (
             <div className="flex flex-col px-10 py-4 bg-gray-100 h-[350px]" key={index}>

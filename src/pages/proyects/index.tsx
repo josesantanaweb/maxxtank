@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom"
+
 const DATA = [
   {
     image: 'project-01.png',
@@ -54,9 +56,9 @@ const ProjectsPage = () => {
                 <h4 className="mb-3 text-[18px] font-[700]">{item.date}</h4>
                 <p className="mb-3 text-[24px] text-black font-[700] leading-[26px]">{item.description}</p>
                 <div className="flex justify-start">
-                  <a href="" className="text-base font-[700] text-black">
+                  <Link to="/detalles" className="text-base font-[700] text-black">
                     Ver mas
-                  </a>
+                  </Link>
                 </div>
               </div>
             ))}
