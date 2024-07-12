@@ -17,11 +17,11 @@ const ProjectDetailsPage = () => {
             <div className="w-full my-8 image-sm">
                 <img src="/public/images/projects-tank.jpg" alt="" className="h-full  w-full object-cover object-bottom"/>
             </div>
-            <div className="flex">
-                <div className="w-1/3 p-6">
+            <div className="flex flex-col-reverse-sm">
+                <div className="w-1/3 p-6 w-full-sm">
                 <Sidebar/>
                 </div>
-                <div className="w-full mx-8 p-12">
+                <div className="w-full mx-8 p-12 article-m">
                 <Article/>
                 </div>
             </div>

@@ -51,7 +51,7 @@ const TankPage: React.FC = () => {
             <div className="relative flex flex-col items-center">
               <img src="/images/abstract-figure.svg" alt="" className="absolute w-24 -top-40 none-sm" />
               <img src="/images/tank-render.png" alt="" />
-              <h4 className="mb-5 text-center text-white text-4xl mt-8 all">
+              <h4 className="mb-5 text-center text-white text-4xl mt-8">
                 Diseño e ingenieria hecho a la medida
               </h4>
             </div>

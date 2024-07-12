@@ -31,11 +31,11 @@
     .text-start-sm{
         text-align: start;
     }
-    .all{
-        text-decoration: line-through;
+    .article-m{
+        margin: 0 !important;
     }
-    image-sm{
-        width: 100% !important;
-        height: auto !important;
+    .flex-col-reverse-sm{
+        display: flex;
+        flex-direction: column-reverse !important;
     }
 }
