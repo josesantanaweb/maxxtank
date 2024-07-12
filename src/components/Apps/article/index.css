@@ -9,3 +9,7 @@
 .imageContainer div{
     flex: 0 2 49%;
 }
+.image-sm{
+    width: 100% !important;
+    height: auto !important;
+}

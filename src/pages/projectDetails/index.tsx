@@ -2,6 +2,8 @@ import Article from "@/components/Apps/article";
 import Sidebar from "@/components/Apps/sidebarArticle";
 import ProjectsPage from "../proyects";
 import Footer from "@/components/Common/Footer";
+import "../../styles/style.css"
+
 
 const ProjectDetailsPage = () => {
     return (
@@ -12,7 +14,7 @@ const ProjectDetailsPage = () => {
                 Tanques de almacenamiento de agua para la planta de Coca-Cola en Gachanzipá, Cundinamarca, Colombia.
                 </h2>
             </div>
-            <div className="h-screen w-full my-8">
+            <div className="w-full my-8 image-sm">
                 <img src="/public/images/projects-tank.jpg" alt="" className="h-full  w-full object-cover object-bottom"/>
             </div>
             <div className="flex">

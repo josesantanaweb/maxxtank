@@ -1,5 +1,4 @@
-import './index.css'
-import SocialMedia from '@/components/Common/SocialMedia'
+import "./index.css"
 
 const Article = () => {
   return (
@@ -91,7 +90,7 @@ const Article = () => {
           </ul>
         </div>
         <div className="space-y-2">
-          <div className="h-screen w-full">
+          <div className="h-screen w-full image-sm">
             <img src="/public/images/build-tank.jpg" alt="" className="h-full  w-full object-cover" />
           </div>
           <div>Lorem ipsum dolor sit amet, consectetuer adipiscing </div>
