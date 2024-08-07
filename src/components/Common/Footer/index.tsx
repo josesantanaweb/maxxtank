@@ -1,6 +1,8 @@
+import "@/styles/style.css"
+
 const Footer = () => {
   return (
-    <div className="flex flex-row px-6 text-xs bg-zinc-800 text-slate-200">
+    <div className="flex flex-row px-6 text-xs bg-zinc-800 text-slate-200 flex-col-sm">
       <div
         className="flex items-center my-8 ml-8 border-r-2 border-gray-400 border-dashed "
         style={{ flex: '3 0 25%' }}
@@ -10,7 +12,7 @@ const Footer = () => {
           exercitationem iure.
         </p>
       </div>
-      <div className="flex items-center">
+      <div className="flex items-center flex-col-sm">
         <div className="my-8 ml-6" style={{ flex: '1 0 30% ' }}>
           <p>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium, esse? Nulla minima veritatis quidem

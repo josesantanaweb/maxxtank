@@ -10,6 +10,7 @@ export default {
         },
       },
       screens: {
+        'sm': '600px',
         '2xl': '1770px',
       },
     },

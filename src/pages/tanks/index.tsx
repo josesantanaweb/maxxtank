@@ -1,9 +1,8 @@
 import Apps from '@/components/Apps/Apps'
-import Tanks from '@/components/Home/Tanks'
 import GalleryImage from '@/components/Common/GalleryImage'
 import Button from '@/components/Common/Button'
 import Footer from '@/components/Common/Footer'
-
+import "../../styles/style.css"
 
 import { ApplicationData, GalleryImageData } from '@/components/Apps/types/types'
 
@@ -36,28 +35,61 @@ const DataImageGalleryTanks: GalleryImageData[] = [
 const TankPage: React.FC = () => {
   return (
     <div>
-      <Apps tanksData={DATA} />
+      <Apps tanksData={DATA} title='TANQUES' />
 
-      <Tanks />
-      <div className=" text-5xl my-20 mx-8">PROCESO DE ARMADO</div>
       <div>
+      <div>
+      <div className="flex justify-center py-20 px-12 bg-zinc-800">
+        <div className="container flex flex-col justify-start">
+          <h4 className="mb-10 mt-10 text-6xl text-white w-1/3">Diseño e ingenieria</h4>
+          <div className="grid items-start grid-cols-3 gap-10 grid-col">
+            <ul className='pt-12'>
+              <li className="py-3 text-xl text-white border-b border-dashed ">Adaptabilidad</li>
+              <li className="py-3 text-xl text-white border-b border-dashed ">Ahorro de materiales</li>
+              <li className="py-3 text-xl text-white border-b border-dashed ">Precision</li>
+            </ul>
+            <div className="relative flex flex-col items-center">
+              <img src="/images/abstract-figure.svg" alt="" className="absolute w-24 -top-40 none-sm" />
+              <img src="/images/tank-render.png" alt="" />
+              <h4 className="mb-5 text-center text-white text-4xl mt-8">
+                Diseño e ingenieria hecho a la medida
+              </h4>
+            </div>
+            <div className="flex flex-col pt-12 space-y-6">
+              <h4 className="text-white text-2xl">Precision y eficiencia</h4>
+              <div className='space-y-6'>
+              <p className="text-white">
+              Desarrollamos ingenierías con  softwares  especializados, adaptando el diseño a las necesaidades específicas de cada proyecto.
+              </p>
+              <p className="text-white">
+              Gracias a nuestro análisis y simulación de resistencia y comportamiento de materiales, estamos en la capacidad de desarrollar proyectos de ingeniería desde cero, con un mínimo márgen de error, garantizando la máxima eficiencia de recursos y tiempos de ejecución.              </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      </div>
+
+      <div className=" text-5xl my-20 mx-8">PROCESO DE ARMADO</div>
+      <div className='my-16 h-screen w-4/5 mx-auto h-sm'>
         <GalleryImage images={DataImageGalleryTanks} />
       </div>
       <div>
-        <div className="text-3xl mx-8 my-12">
+        <div className="text-3xl mx-8">
           Tanques modulares pernados con redescubrimiento para almacenamiento de agua y otros liquidos
         </div>
       </div>
-      <div className="flex space-x-32 justify-center my-8">
-        <div className="flex space-x-28">
-          <div>Translado</div>
-          <div>Encofrado</div>
-          <div>Ensamble</div>
+      <div className="flex space-x-16 justify-center my-8 flex-col-sm div-sm">
+        <div className="flex space-x-12 div-sm">
+          <div className='pr-12 border-r-2 border-dashed border-gray-400 div-sm'>Translado</div>
+          <div className='pr-12 border-r-2 border-dashed border-gray-400 div-sm'>Encofrado</div>
+          <div className='pr-16 border-r-2 border-dashed border-gray-400 div-sm'>Ensamble</div>
         </div>
-        <div className="flex space-x-28">
-          <div>Impermeabilizacion</div>
-          <div>Acabado</div>
-          <div>Prueba</div>
+        <div className="flex space-x-12 div-sm">
+          <div className='div-sm'>Impermeabilizacion</div>
+          <div className='pl-12 border-l-2 border-dashed border-gray-400 div-sm'>Acabado</div>
+          <div className='pl-12 border-l-2 border-dashed border-gray-400 div-sm'>Prueba</div>
         </div>
       </div>
       <div className="text-center mx-auto my-20 space-y-6 w-4/5">
@@ -78,9 +110,9 @@ const TankPage: React.FC = () => {
         </div>
       </div>
 
-      <div className="flex justify-center p-16 bg-gray-300">
-        <div className="container flex flex-col justify-start w-1/4">
-          <h4 className="mb-16 text-5xl font-bold">PANELES</h4>
+      <div className="flex justify-center p-16 bg-gray-300 flex-col-sm">
+        <div className="container flex flex-col justify-start w-1/4 w-full-sm">
+          <h4 className="mb-16 text-5xl font-bold title-sm">PANELES</h4>
           <div className="flex flex-col">
             <div className="py-6  border-b-2 border-dashed border-black text-sm">
               Lámina: Acero galvanizado continuo por inmersión en caliente, bajo norma ASTM A653, recubrimiento G-90 en
@@ -102,13 +134,13 @@ const TankPage: React.FC = () => {
           </div>
         </div>
 
-        <div className=" w-1/2 relative flex flex-col items-center mx-6">
-          <img src="/icons/line-dashed.png" alt="" />
-          <img src="/images/panel-tank.png" alt="" />
-          <h4 className="text-5xl text-center mt-20">Exclusivo panel R8V con recubrimiento PROTECOAT</h4>
+        <div className=" w-1/2 relative flex flex-col items-center mx-6 w-full-sm">
+          <img src="/icons/line-dashed.png" alt="" className='none-sm'/>
+          <img src="/images/panel-tank.png" alt="" className='w-full-sm'/>
+          <h4 className="text-5xl text-center mt-20 title-xs">Exclusivo panel R8V con recubrimiento PROTECOAT</h4>
         </div>
-        <div className="container flex flex-col justify-start  w-1/4 pt-12 ">
-          <h4 className="mb-16 text-5xl font-bold">Estructura Rolada</h4>
+        <div className="container flex flex-col justify-start  w-1/4 pt-12 w-full-sm">
+          <h4 className="mb-16 text-5xl font-bold title-xs">Estructura Rolada</h4>
           <div className="flex flex-col">
             <div className="py-6 text-sm">
               El material deberá ser conforme con los estándares mínimos ASTM A36 ó ANSI 1010.
@@ -122,14 +154,14 @@ const TankPage: React.FC = () => {
       </div>
       <div className=" p-16 flex flex-col mt-8">
         <div className="mt-12">
-          <div className="text-5xl">Impermeabilizacion</div>
+          <div className="text-5xl title-xs">Impermeabilizacion</div>
         </div>
-        <div className="flex flex-arrow mt-16">
-          <div className="bg-black h-4/5 w-4/5">
-
+        <div className="flex flex-arrow mt-16 flex-col-sm">
+          <div className="w-2/5 mr-12 w-full-sm">
+            <GalleryImage images={DataImageGalleryTanks}/>
           </div>
-          <div className='w-1/2 space-x-4'>
-            <div className="text-3xl mb-8">Membranas Impermeabilizantes</div>
+          <div className='w-3/5 mx-12 w-full-sm div-sm'>
+            <div className="text-4xl mb-8 text-end title-xs text-start-sm">Membranas Impermeabilizantes</div>
             <div className="space-y-6">
               <div>
                 Es un producto fabricado a base de películas de P.V.C, diseñado en su interior con refuerzo en tela de
