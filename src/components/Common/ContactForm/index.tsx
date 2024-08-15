@@ -11,8 +11,9 @@ const ContactPage = () => {
       <div className="flex flex-row items-baseline justify-between px-12">
         <div className="w-[40%]">
           <p className="pl-8 ">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex, ipsum soluta. Ea voluptate, magni sit
-            voluptatum voluptatem illum accusamus earum quo quisquam obcaecati laudantium fugiat?
+            En sus proyectos Maxxtank desea ser su aliado, ofreciéndole una solución ajustada a su necesidad, lo cual
+            lograremos con nuestro equipo de expertos. Adicionalmente incluiría una de las imágenes que tenemos del
+            diseño computarizado de tanques.
           </p>
         </div>
         <div className="w-[40%] p-8 bg-gray-100">

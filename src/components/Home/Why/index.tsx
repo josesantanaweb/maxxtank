@@ -9,21 +9,22 @@ const DATA = [
   {
     title: 'Disponibilidad',
     description:
-      'Suministros rápidos debido a la existencia de paneles standard en stock, así que podemos no hay demoras logísticas en la instalación del tanque que necesitas.',
+      'Nuestra tecnología de paneles patentados nos permite mantener una existencia de paneles y piezas estándar, lo cual nos permite completar rápidamente el diseño y fabricación de su proyecto así como instalar en tiempo récord.',
   },
   {
     title: 'Eficiecia',
     description:
-      'Ensamblados rápidos y automatizados a un bajo costo de montaje, no necesitan los elevados costos de la soldadura.',
+      'Nuestros tanques son una solución flexible y personalizada, adaptable a su proyecto en forma y capacidades, asimismo representan una ventaja en instalación y mantenimiento, disminuyendo costos de construcción, operación y transporte a lo largo de todo su proyecto.',
   },
   {
     title: 'Economía',
-    description: 'Desmontaje fácil y económico, así que si necesitas trasladarlo de ubicación, no hay ningún problema.',
+    description:
+      'Los tanques MaxxTank son más sostenibles debido a su durabilidad y capacidad de reutilización, ampliación o movilización, lo que reduce la necesidad de reinversiones para el mismo propósito.',
   },
   {
-    title: 'Garantía',
+    title: 'Ingeniería',
     description:
-      'Las conexiones atornilladas y el mástico sellador especial garantizan un depósito libre de fugas. Lo instalamos y te olvidas de problemas con el tanque.',
+      'En MaxxTank tenemos la capacidad de diseñar soluciones a la medida y bajo normas aplicables según industria o aplicación. Nuestra ingeniería toma en cuenta reglamentaciones locales e internacionales, como la NSR-10, ACI-350-3, AWWA D103-19, NFPA-22, API-650 y otras que estén especificadas en su proyecto.',
   },
 ]
 

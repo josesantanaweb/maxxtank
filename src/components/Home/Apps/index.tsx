@@ -4,26 +4,25 @@ const DATA = [
   {
     image: 'apps-tank.png',
     title: 'Almacenamiento de agua Potable',
-    description:
-      'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation',
+    description: ' asegurando que cada hogar, negocio y comunidad tenga acceso a agua limpia y segura en todo momento',
   },
   {
     image: 'apps-tank.png',
-    title: 'Almacenamiento de agua Potable',
+    title: 'Reserva contra incendio',
     description:
-      'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation',
+      'garantizan un suministro inmediato y efectivo de agua en situaciones críticas, contribuyendo a la seguridad y protección de comunidades, industrias y edificaciones.',
   },
   {
     image: 'apps-tank.png',
-    title: 'Almacenamiento de agua Potable',
+    title: 'Almacenamiento de líquidos para procesos industriales',
     description:
-      'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation',
+      'optimizan la eficiencia y seguridad en la gestión de líquidos, contribuyendo al éxito y la sostenibilidad de operaciones industriales.',
   },
   {
     image: 'apps-tank.png',
-    title: 'Almacenamiento de agua Potable',
+    title: 'Almacenamiento de aguas de lluvias para riego u otros fines',
     description:
-      'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation',
+      'maximiza el rendimiento y la sostenibilidad de sus actividades en diversos sectores como agroindustria, ganadería, piscicultura, etc.',
   },
 ]
 

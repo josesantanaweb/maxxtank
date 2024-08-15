@@ -15,11 +15,9 @@ const ContactPage = () => {
         </div>
         <div className="mx-auto mt-8 text-center">
           <div>Carrera 34 # 54-45</div>
-          <div>Bogotá, Colombia</div>
-          <div>Tel: 204-156-32-23</div>
-          <div>Cel: 302-456-8945</div>
-          <div>Mail: gerencia@maxxtank.com.co</div>
-          <div>Mail: proyectos@maxxtank.com.co</div>
+          <div>Bogotá, Cundinamarca</div>
+          <div>Tel: +57 321 3721522</div>
+          <div>Mail: contacto@maxxtank.com</div>
         </div>
       </div>
 
