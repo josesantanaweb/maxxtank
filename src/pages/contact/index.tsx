@@ -22,7 +22,7 @@ const ContactPage = () => {
       </div>
 
       <div className="w-full my-12">
-        <img src="/public/images/map.png" alt="mapa" />
+        <img src="/images/map.png" alt="mapa" />
       </div>
 
       <div className="mt-6 mb-16 ">
