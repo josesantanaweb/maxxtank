@@ -2,7 +2,7 @@ const SocialMedia = () => {
   return (
     <div className="flex flex-row items-center justify-center space-x-8">
       <div className="flex items-center mb-4 space-x-4">
-        <img src="/public/icons/clickImage.png" alt="" className="w-13 h-13" />
+        <img src="/icons/clickImage.png" alt="" className="w-13 h-13" />
         <div className="text-xl font-semibold">Siguenos</div>
       </div>
       <div className="flex space-x-4">

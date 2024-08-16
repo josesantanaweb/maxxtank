@@ -1,4 +1,4 @@
-import "@/styles/style.css"
+import '@/styles/style.css'
 
 const Footer = () => {
   return (
@@ -21,7 +21,7 @@ const Footer = () => {
         </div>
 
         <div className="w-20 mx-2 " style={{ margin: '0 20px' }}>
-          <img src="/public/icons/bands.png" alt="" className="w-full" />
+          <img src="/icons/bands.png" alt="" className="w-full" />
         </div>
         <div className="my-8 mr-6 " style={{ flex: '1 0 30%', textAlign: 'end' }}>
           <p>

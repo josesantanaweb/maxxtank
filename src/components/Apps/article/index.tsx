@@ -51,11 +51,11 @@ const Article = () => {
         <div>
           <div className="imageContainer ">
             <div className="">
-              <img src="/public/images/project-page-01.png" alt="" />
+              <img src="/images/project-page-01.png" alt="" />
             </div>
 
             <div className="">
-              <img src="/public/images/project-page-02.jpg" alt="" />
+              <img src="/images/project-page-02.jpg" alt="" />
             </div>
           </div>
           <div>Lorem ipsum dolor sit amet, consectetuer adipiscing </div>

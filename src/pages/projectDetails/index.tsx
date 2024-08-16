@@ -1,36 +1,33 @@
-import Article from "@/components/Apps/article";
-import Sidebar from "@/components/Apps/sidebarArticle";
-import ProjectsPage from "../proyects";
-import Footer from "@/components/Common/Footer";
-import "../../styles/style.css"
-
+import Article from '@/components/Apps/article'
+import Sidebar from '@/components/Apps/sidebarArticle'
+import Footer from '@/components/Common/Footer'
+import '../../styles/style.css'
+import ProjectsPage from '../proyects'
 
 const ProjectDetailsPage = () => {
-    return (
-        <div>
-            <div className="mx-20 px-12 space-y-4">
-                <div>Bogotá 30/04/24</div>
-                <h2 className="text-3xl self-center">
-                Tanques de almacenamiento de agua para la planta de Coca-Cola en Gachanzipá, Cundinamarca, Colombia.
-                </h2>
-            </div>
-            <div className="w-full my-8 image-sm">
-                <img src="/public/images/projects-tank.jpg" alt="" className="h-full  w-full object-cover object-bottom"/>
-            </div>
-            <div className="flex flex-col-reverse-sm">
-                <div className="w-1/3 p-6 w-full-sm">
-                <Sidebar/>
-                </div>
-                <div className="w-full mx-8 p-12 article-m">
-                <Article/>
-                </div>
-            </div>
-
-            <ProjectsPage />
-            <Footer />
-
-
+  return (
+    <div>
+      <div className="px-12 mx-20 space-y-4">
+        <div>Bogotá 30/04/24</div>
+        <h2 className="self-center text-3xl">
+          Tanques de almacenamiento de agua para la planta de Coca-Cola en Gachanzipá, Cundinamarca, Colombia.
+        </h2>
+      </div>
+      <div className="w-full my-8 image-sm">
+        <img src="/images/projects-tank.jpg" alt="" className="object-cover object-bottom w-full h-full" />
+      </div>
+      <div className="flex flex-col-reverse-sm">
+        <div className="w-1/3 p-6 w-full-sm">
+          <Sidebar />
         </div>
-    )
+        <div className="w-full p-12 mx-8 article-m">
+          <Article />
+        </div>
+      </div>
+
+      <ProjectsPage />
+      <Footer />
+    </div>
+  )
 }
 export default ProjectDetailsPage
