@@ -1,4 +1,5 @@
 import Button from '@/components/Common/Button'
+import { Link } from 'react-router-dom'
 const DATA = [
   {
     image: '01.jpg',
@@ -94,9 +95,9 @@ const Apps = () => {
                   <b>Ubicación:</b> {item.ubication}
                 </p>
                 <div className="flex items-center justify-end gap-5">
-                  <a href="/contacto">
+                  <Link to="/contacto">
                     <Button>Cotizar</Button>
-                  </a>
+                  </Link>
                   <a href="/aplicaciones" className="text-black underline cursor-pointer font-[600]">
                     Ver más
                   </a>

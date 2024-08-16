@@ -1,4 +1,5 @@
 import Button from '@/components/Common/Button'
+import { Link } from 'react-router-dom'
 
 const DATA = [
   {
@@ -44,7 +45,9 @@ const Storage = () => {
               reserva de R.C.I.
             </h4>
             <div className="flex justify-end w-full">
-              <Button>Cotizar</Button>
+              <Link to="/contacto">
+                <Button>Cotizar</Button>
+              </Link>
             </div>
           </div>
         </div>
