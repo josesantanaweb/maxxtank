@@ -1,4 +1,4 @@
-import { IoIosAdd } from 'react-icons/io'
+import Item from './Item'
 
 const DATA = [
   {
@@ -21,30 +21,16 @@ const DATA = [
     description:
       'Los tanques MaxxTank son más sostenibles debido a su durabilidad y capacidad de reutilización, ampliación o movilización, lo que reduce la necesidad de reinversiones para el mismo propósito.',
   },
-  {
-    title: 'Ingeniería',
-    description:
-      'En MaxxTank tenemos la capacidad de diseñar soluciones a la medida y bajo normas aplicables según industria o aplicación. Nuestra ingeniería toma en cuenta reglamentaciones locales e internacionales, como la NSR-10, ACI-350-3, AWWA D103-19, NFPA-22, API-650 y otras que estén especificadas en su proyecto.',
-  },
 ]
 
 const Why = () => {
   return (
     <div className="flex justify-center py-20">
       <div className="container">
-        <h4 className="mb-20 text-[80px] font-[900] text-black">LOS 5 POR QUÉ DE MAXX TANK</h4>
+        <h4 className="mb-20 text-[80px] font-[900] text-black">POR QUÉ DE MAXX TANK</h4>
         <div className="flex flex-col">
           {DATA.map((item, index) => (
-            <div
-              key={index}
-              className="grid items-center justify-between grid-cols-3 px-10 py-6 border-t border-gray-400 last:border-b"
-            >
-              <h4 className="text-lg font-[900]">{item.title}</h4>
-              <p className="block text-[16px]">{item.description}</p>
-              <span className="flex justify-end cursor-pointer">
-                <IoIosAdd size={28} />
-              </span>
-            </div>
+            <Item item={item} key={index} />
           ))}
         </div>
       </div>

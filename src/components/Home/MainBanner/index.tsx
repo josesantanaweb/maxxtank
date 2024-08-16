@@ -14,10 +14,12 @@ const MainBanner = () => {
             Liderazgo tecnológico en el diseño e instalación de tanques para almacenamiento de agua y otros líquidos.
           </p>
           <div className="flex justify-end w-full">
-            <Button>
-              Ver Video
-              <IoIosPlay size={18} />
-            </Button>
+            <a href="https://youtu.be/ZswfHNxwZNU" target="_blank">
+              <Button>
+                Ver Video
+                <IoIosPlay size={18} />
+              </Button>
+            </a>
           </div>
         </div>
         <div className="relative flex items-center w-[60%] 2xl:w-[65%] h-full overflow-hidden">

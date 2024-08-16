@@ -50,13 +50,13 @@ const Components = () => {
         <div className="relative flex justify-between gap-20">
           <div className="w-1/2 p-6 bg-gray-100">
             <div className="flex justify-center w-full mb-4">
-              <img src={`/images/${imagen}.jpg`} className="w-full h-[400px]" />
+              <img src={`/images/${imagen}.png`} className="w-full h-[400px]" />
             </div>
             <div className="grid grid-cols-5 gap-3">
               {SLIDES.map((slide, index) => (
                 <img
                   key={index}
-                  src={`/images/${slide}.jpg`}
+                  src={`/images/${slide}.png`}
                   className={`w-full h-[75px] cursor-pointer ${imagen === slide ? 'opacity-100' : 'opacity-50'}`}
                   onClick={() => setImagen(slide)}
                 />
@@ -67,10 +67,10 @@ const Components = () => {
             {DATA.map((item, index) => (
               <li
                 key={index}
-                className="flex items-center justify-between border-b border-black border-dashed cursor-pointer"
+                className="flex items-center justify-between py-1 border-b border-black border-dashed cursor-pointer"
               >
                 <p>{item.title}</p>
-                <span className="text-2xl cursor-pointer font-[900]">+</span>
+                {/* <span className="text-2xl cursor-pointer font-[900]">+</span> */}
               </li>
             ))}
           </div>

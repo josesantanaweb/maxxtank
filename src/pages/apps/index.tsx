@@ -4,7 +4,7 @@ import Components from '@/components/Apps/Components'
 import Diameters from '@/components/Apps/Diameters'
 import Storage from '@/components/Apps/Storage'
 import StorageNetwork from '@/components/Apps/StorageNetwork'
-import Tanks from '@/components/Apps/Tanks'
+import Footer from '@/components/Common/Footer'
 
 const AppsPage = () => {
   return (
@@ -12,13 +12,14 @@ const AppsPage = () => {
       <Apps />
       <Storage />
       <Components />
-      <Tanks />
+      {/* <Tanks /> */}
       <Diameters />
       <Advantages />
       <StorageNetwork />
       <Components />
       <Diameters />
       <Advantages />
+      <Footer />
     </main>
   )
 }

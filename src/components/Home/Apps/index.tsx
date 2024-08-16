@@ -1,28 +1,76 @@
 import Button from '@/components/Common/Button'
-
 const DATA = [
   {
-    image: 'apps-tank.png',
-    title: 'Almacenamiento de agua Potable',
-    description: ' asegurando que cada hogar, negocio y comunidad tenga acceso a agua limpia y segura en todo momento',
+    image: '01.jpg',
+    title: 'Sistema contra Incendio',
+    description: '1 Tanques x 1200 m3.',
+    ubication: 'Mosquera - Cundinamarca.',
   },
   {
-    image: 'apps-tank.png',
-    title: 'Reserva contra incendio',
-    description:
-      'garantizan un suministro inmediato y efectivo de agua en situaciones críticas, contribuyendo a la seguridad y protección de comunidades, industrias y edificaciones.',
+    image: '02.jpg',
+    title: 'Agroindustrial.',
+    description: '1 Tanque x 50 m3.',
+    ubication: 'Rivera - Huila.',
   },
   {
-    image: 'apps-tank.png',
-    title: 'Almacenamiento de líquidos para procesos industriales',
-    description:
-      'optimizan la eficiencia y seguridad en la gestión de líquidos, contribuyendo al éxito y la sostenibilidad de operaciones industriales.',
+    image: '03.jpg',
+    title: 'Agua Potable.',
+    description: '2 Tanques x 20 m3.',
+    ubication: 'Candelaria - Valle del Cauca.',
   },
   {
-    image: 'apps-tank.png',
-    title: 'Almacenamiento de aguas de lluvias para riego u otros fines',
-    description:
-      'maximiza el rendimiento y la sostenibilidad de sus actividades en diversos sectores como agroindustria, ganadería, piscicultura, etc.',
+    image: '04.jpg',
+    title: 'Sistema contra Incendio.',
+    description: '1 Tanques x 442 m3.',
+    ubication: 'Tocancipá - Cundinamarca.',
+  },
+  {
+    image: '05.png',
+    title: 'Agroindustrial.',
+    description: '2 Tanques x 334 m3.',
+    ubication: 'Guarne - Antioquia.',
+  },
+  {
+    image: '06.png',
+    title: 'Captación de Agua de Lluvia.',
+    description: '1 Tanque x 334 m3.',
+    ubication: 'Pereira - Risaralda.',
+  },
+  {
+    image: '07.png',
+    title: 'Planta de Tratamiento',
+    description: '1 Tanque x 30 m3.',
+    ubication: 'Suba - Bogotá.',
+  },
+  {
+    image: '08.png',
+    title: 'Agua Potable.',
+    description: '1 Tanque x 12 m3.',
+    ubication: 'Villa Nueva - Casanare',
+  },
+  {
+    image: '09.png',
+    title: 'Proyecto de Construcción Vial.',
+    description: '1 Tanque x 100 m3',
+    ubication: 'Puerto Berrio - Antioquia',
+  },
+  {
+    image: '10.png',
+    title: 'Agua para Riego.',
+    description: '1 Tanque x 1200 m3',
+    ubication: 'Pijao - Quindío.',
+  },
+  {
+    image: '11.png',
+    title: 'Sistema contra Incendio.',
+    description: '1 Tanque x 224 m3.',
+    ubication: 'Rubiales - Meta..',
+  },
+  {
+    image: '12.png',
+    title: 'Industria Cementera.',
+    description: '1 Tanque x 50 m3.',
+    ubication: 'Zipaquirá– Cundinamarca.',
   },
 ]
 
@@ -34,14 +82,23 @@ const Apps = () => {
         <div className="grid items-center grid-cols-1 gap-12 2xl:grid-cols-2 apps-separator">
           {DATA.map((item, index) => (
             <div className="flex items-start gap-8" key={index}>
-              <img src={`/images/${item.image}`} alt="Agua Potable" className="object-cover w-[330px] h-[230px]" />
-              <div className="flex flex-col">
+              <div className="w-[600px] h-[230px]">
+                <img src={`/images/tanques/${item.image}`} alt="Agua Potable" className="object-cover w-full h-full" />
+              </div>
+              <div className="flex flex-col w-full">
                 <h4 className="mb-5 text-[38px] font-[900] leading-[38px]">{item.title}</h4>
-                <p className="mb-10 text-sm">{item.description}</p>
+                <p className="text-sm">
+                  <b>Cantidad x Capacidad:</b> {item.description}
+                </p>
+                <p className="mb-10 text-sm">
+                  <b>Ubicación:</b> {item.ubication}
+                </p>
                 <div className="flex items-center justify-end gap-5">
-                  <Button>Cotizar</Button>
-                  <a href="#" className="text-black underline cursor-pointer font-[600]">
-                    Ver mas
+                  <a href="/contacto">
+                    <Button>Cotizar</Button>
+                  </a>
+                  <a href="/aplicaciones" className="text-black underline cursor-pointer font-[600]">
+                    Ver más
                   </a>
                 </div>
               </div>

@@ -23,10 +23,12 @@ const Tanks = () => {
               </div>
             </div>
             <div className="flex flex-col">
-              <h4 className="text-[34px] text-white font-[900]">Certficación y eficiencia</h4>
+              <h4 className="text-[34px] text-white font-[900]">INGENIERIA</h4>
               <p className="text-lg text-white">
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
-                laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation{' '}
+                En MaxxTank tenemos la capacidad de diseñar soluciones a la medida y bajo normas aplicables según
+                industria o aplicación. Nuestra ingeniería toma en cuenta reglamentaciones locales e internacionales,
+                como la NSR-10, ACI-350-3, AWWA D103-19, NFPA-22, API-650 y otras que estén especificadas en su
+                proyecto.
               </p>
             </div>
           </div>

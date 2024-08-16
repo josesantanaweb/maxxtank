@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom"
+import { Link } from 'react-router-dom'
 
 const DATA = [
   {
@@ -57,7 +57,7 @@ const ProjectsPage = () => {
                 <p className="mb-3 text-[24px] text-black font-[700] leading-[26px]">{item.description}</p>
                 <div className="flex justify-start">
                   <Link to="/detalles" className="text-base font-[700] text-black">
-                    Ver mas
+                    Ver más
                   </Link>
                 </div>
               </div>

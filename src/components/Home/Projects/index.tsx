@@ -32,9 +32,9 @@ const Projects = () => {
               <img src={`/images/${item.imagen}`} alt="" className="mb-3" />
               <h4 className="mb-3 text-sm font-semibold text-black">{item.date}</h4>
               <p className="mb-3 text-lg text-black font-[900]">{item.description}</p>
-              <a href="#" className="text-base font-[900] text-black">
+              {/* <a href="#" className="text-base font-[900] text-black">
                 Ver
-              </a>
+              </a> */}
             </div>
           ))}
         </div>

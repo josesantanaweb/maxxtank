@@ -1,5 +1,3 @@
-import Button from '@/components/Common/Button'
-
 const DATA = [
   {
     title: '3POTX4',
@@ -100,12 +98,12 @@ const Diameters = () => {
             </div>
           ))}
         </div>
-        <div className="flex justify-end">
+        {/* <div className="flex justify-end">
           <div className="flex items-center gap-4">
             <img src="/images/pdf.png" className="w-8" />
             <Button>Descargar</Button>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   )

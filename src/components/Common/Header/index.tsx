@@ -10,14 +10,14 @@ const MENU_DATA = [
     name: 'Aplicaciones',
     url: '/aplicaciones',
   },
-  {
-    name: 'Tanques',
-    url: '/tanques',
-  },
-  {
-    name: 'Proyectos',
-    url: '/proyectos',
-  },
+  // {
+  //   name: 'Tanques',
+  //   url: '/tanques',
+  // },
+  // {
+  //   name: 'Proyectos',
+  //   url: '/proyectos',
+  // },
   {
     name: 'Contacto',
     url: '/contacto',

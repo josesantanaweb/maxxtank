@@ -13,11 +13,11 @@ const AboutUs = () => {
         <div className="container">
           <div className="flex justify-center gap-10 mb-14">
             <img src="/images/logo.svg" alt="banner" className="w-[160px]" />
-            <h4 className="text-[53px] text-black leading-[45px] font-[600]">
+            <h4 className="text-[53px] text-black leading-[60px] font-[600]">
               Ingenería, tecnología, experiencia para ofrecer soluciones adaptadas a cada proyecto.
             </h4>
           </div>
-          <div className="flex items-center justify-between">
+          <div className="flex items-start justify-between">
             <div className="w-1/4 px-4">
               <h4 className="text-lg font-[900] text-black text-[24px] mb-3">Propósito</h4>
               <p className="text-sm text-black text-[18px]">
@@ -46,7 +46,16 @@ const AboutUs = () => {
             </div>
             <div className="flex flex-col justify-center w-1/4 px-4">
               <img src="/images/video-preview.png" alt="video" className="w-[170px] mb-4 h-[140px]" />
-              <p className="text-sm text-black text-[18px] max-w-[200px]">Conoce más en nuestro video corporativo </p>
+              <p className="text-sm text-black text-[16px] max-w-[200px] mb-3">
+                Conoce más en nuestro <br /> video corporativo
+              </p>
+              <a
+                href="https://youtu.be/ZswfHNxwZNU"
+                target="_blank"
+                className="text-black underline cursor-pointer font-[600] ml-24"
+              >
+                Ver Video
+              </a>
             </div>
           </div>
         </div>
