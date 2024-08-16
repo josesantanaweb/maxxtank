@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { IoIosAdd } from 'react-icons/io'
+import { IoIosAdd, IoIosRemove } from 'react-icons/io'
 
 const Item = ({ item }: any) => {
   const [open, setOpen] = useState(false)
@@ -13,7 +13,7 @@ const Item = ({ item }: any) => {
       <h4 className="text-lg font-[900]">{item.title}</h4>
       <p className={`block text-[16px] transition-all ${open ? '' : 'truncate'}`}>{item.description}</p>
       <span className="flex justify-end cursor-pointer" onClick={handleOpen}>
-        <IoIosAdd size={28} />
+        {open ? <IoIosRemove size={28} /> : <IoIosAdd size={28} />}
       </span>
     </div>
   )

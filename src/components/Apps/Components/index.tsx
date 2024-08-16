@@ -1,4 +1,5 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
+import { FaAngleLeft, FaAngleRight } from 'react-icons/fa6'
 
 const DATA = [
   {
@@ -39,9 +40,19 @@ const DATA = [
   },
 ]
 
-const SLIDES = ['slider-01', 'slider-02', 'slider-03', 'slider-04', 'slider-05']
+const SLIDES = ['slider-1', 'slider-2', 'slider-3', 'slider-4', 'slider-5']
 const Components = () => {
-  const [imagen, setImagen] = useState<string>('slider-01')
+  const [imagen, setImagen] = useState<string>('slider-1')
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setImagen(`${SLIDES[(SLIDES.indexOf(imagen) + 1) % SLIDES.length]}`)
+    }, 2000)
+    return () => clearInterval(interval)
+  }, [imagen])
+
+  const handlePrev = () => setImagen(`${SLIDES[Math.max(SLIDES.indexOf(imagen) - 1, 0)]}`)
+  const handleNext = () => setImagen(`${SLIDES[Math.min(SLIDES.indexOf(imagen) + 1, 4)]}`)
 
   return (
     <div className="flex flex-col items-center justify-center py-20 bg-white">
@@ -49,8 +60,22 @@ const Components = () => {
         <h4 className="text-[83px] font-[900] text-black leading-[80px] mb-14">COMPONENTES</h4>
         <div className="relative flex justify-between gap-20">
           <div className="w-1/2 p-6 bg-gray-100">
-            <div className="flex justify-center w-full mb-4">
-              <img src={`/images/${imagen}.png`} className="w-full h-[400px]" />
+            <div className="relative flex justify-center w-full mb-4">
+              <img src={`/images/${imagen}.png`} className="w-full h-[400px] transition-all" />
+              <div className="absolute left-0 flex items-center justify-between w-full px-5 top-1/2 -translate-y-2/4">
+                <span
+                  onClick={handlePrev}
+                  className="flex items-center justify-center w-10 h-10 text-xl bg-white rounded-full cursor-pointer bg-opacity-70 text-primary-100"
+                >
+                  <FaAngleLeft />
+                </span>
+                <span
+                  onClick={handleNext}
+                  className="flex items-center justify-center w-10 h-10 text-xl bg-white rounded-full cursor-pointer bg-opacity-70 text-primary-100"
+                >
+                  <FaAngleRight />
+                </span>
+              </div>
             </div>
             <div className="grid grid-cols-5 gap-3">
               {SLIDES.map((slide, index) => (

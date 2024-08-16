@@ -1,23 +1,75 @@
 const DATA = [
   {
-    date: 'Bogotá 30/04/24',
-    imagen: 'project-01.png',
-    description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam',
+    image: '01.jpg',
+    title: 'Sistema contra Incendio',
+    description: '1 Tanques x 1200 m3.',
+    ubication: 'Mosquera - Cundinamarca.',
   },
   {
-    date: 'Bogotá 30/04/24',
-    imagen: 'project-02.png',
-    description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam',
+    image: '02.jpg',
+    title: 'Agroindustrial.',
+    description: '1 Tanque x 50 m3.',
+    ubication: 'Rivera - Huila.',
   },
   {
-    date: 'Bogotá 30/04/24',
-    imagen: 'project-03.png',
-    description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam',
+    image: '03.jpg',
+    title: 'Agua Potable.',
+    description: '2 Tanques x 20 m3.',
+    ubication: 'Candelaria - Valle del Cauca.',
   },
   {
-    date: 'Bogotá 30/04/24',
-    imagen: 'project-04.png',
-    description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam',
+    image: '04.jpg',
+    title: 'Sistema contra Incendio.',
+    description: '1 Tanques x 442 m3.',
+    ubication: 'Tocancipá - Cundinamarca.',
+  },
+  {
+    image: '05.png',
+    title: 'Agroindustrial.',
+    description: '2 Tanques x 334 m3.',
+    ubication: 'Guarne - Antioquia.',
+  },
+  {
+    image: '06.png',
+    title: 'Captación de Agua de Lluvia.',
+    description: '1 Tanque x 334 m3.',
+    ubication: 'Pereira - Risaralda.',
+  },
+  {
+    image: '07.png',
+    title: 'Planta de Tratamiento',
+    description: '1 Tanque x 30 m3.',
+    ubication: 'Suba - Bogotá.',
+  },
+  {
+    image: '08.png',
+    title: 'Agua Potable.',
+    description: '1 Tanque x 12 m3.',
+    ubication: 'Villa Nueva - Casanare',
+  },
+  {
+    image: '09.png',
+    title: 'Proyecto de Construcción Vial.',
+    description: '1 Tanque x 100 m3',
+    ubication: 'Puerto Berrio - Antioquia',
+  },
+  {
+    image: '10.png',
+    title: 'Agua para Riego.',
+    description: '1 Tanque x 1200 m3',
+    ubication: 'Pijao - Quindío.',
+  },
+  {
+    image: '11.png',
+    title: 'Sistema contra Incendio.',
+    description: '1 Tanque x 224 m3.',
+    ubication: 'Rubiales - Meta..',
+  },
+  {
+    image: '12.png',
+    title: 'Industria Cementera.',
+    description: '1 Tanque x 50 m3.',
+    ubication: 'Zipaquirá– Cundinamarca.',
   },
 ]
 
@@ -29,12 +81,16 @@ const Projects = () => {
         <div className="grid items-center grid-cols-4 gap-8">
           {DATA.map((item, index) => (
             <div className="flex flex-col" key={index}>
-              <img src={`/images/${item.imagen}`} alt="" className="mb-3" />
-              <h4 className="mb-3 text-sm font-semibold text-black">{item.date}</h4>
-              <p className="mb-3 text-lg text-black font-[900]">{item.description}</p>
-              {/* <a href="#" className="text-base font-[900] text-black">
-                Ver
-              </a> */}
+              <img src={`/images/tanques/${item.image}`} alt="" className="mb-3 h-[280px]" />
+              <h4 className="mb-1 text-lg font-semibold text-black">{item.title}</h4>
+              <p className="text-base text-black">
+                <b>Cantidad: </b>
+                {item.description}
+              </p>
+              <p className="text-base text-black">
+                <b>Ubicación: </b>
+                {item.ubication}
+              </p>
             </div>
           ))}
         </div>

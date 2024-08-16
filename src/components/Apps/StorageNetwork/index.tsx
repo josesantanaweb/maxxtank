@@ -27,7 +27,7 @@ const Storage = () => {
         </h4>
         <p className="mb-10 text-[53px] text-black leading-[50px]">
           Tanques modulares pernados según normativa NFPA-22 *Norma para tanques de agua para la protección contra
-          incencios privada
+          incencios.
         </p>
         <img src="/images/app-tank-3.png" alt="tank" className="w-full h-[800px]" />
       </div>

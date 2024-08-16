@@ -23,7 +23,7 @@ const Tanks = () => {
               </div>
             </div>
             <div className="flex flex-col">
-              <h4 className="text-[34px] text-white font-[900]">INGENIERIA</h4>
+              <h4 className="text-[34px] text-white font-[900] capitalize">Ingeniería</h4>
               <p className="text-lg text-white">
                 En MaxxTank tenemos la capacidad de diseñar soluciones a la medida y bajo normas aplicables según
                 industria o aplicación. Nuestra ingeniería toma en cuenta reglamentaciones locales e internacionales,

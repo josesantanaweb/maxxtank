@@ -30,7 +30,7 @@ const Header = () => {
       <div className="flex items-center justify-center bg-gray-100">
         <div className="container relative flex justify-center p-3">
           <p className="text-sm font-semibold text-black">
-            Tel: +57 321 3721522 contacto@maxxtank.com <span className="underline">Contáctanos</span>
+            Tel: +57 321 3721522 contacto@maxxtank.com.co <span className="underline">Contáctanos</span>
           </p>
           <div className="absolute right-0 cursor-pointer">
             <IoIosClose size={24} />

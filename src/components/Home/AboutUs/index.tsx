@@ -14,7 +14,7 @@ const AboutUs = () => {
           <div className="flex justify-center gap-10 mb-14">
             <img src="/images/logo.svg" alt="banner" className="w-[160px]" />
             <h4 className="text-[53px] text-black leading-[60px] font-[600]">
-              Ingenería, tecnología, experiencia para ofrecer soluciones adaptadas a cada proyecto.
+              Ingeniería, tecnología y experiencia para ofrecer soluciones adaptadas a cada proyecto.
             </h4>
           </div>
           <div className="flex items-start justify-between">

@@ -12,8 +12,7 @@ const ContactPage = () => {
         <div className="w-[40%]">
           <p className="pl-8 ">
             En sus proyectos Maxxtank desea ser su aliado, ofreciéndole una solución ajustada a su necesidad, lo cual
-            lograremos con nuestro equipo de expertos. Adicionalmente incluiría una de las imágenes que tenemos del
-            diseño computarizado de tanques.
+            lograremos con nuestro equipo de expertos.
           </p>
         </div>
         <div className="w-[40%] p-8 bg-gray-100">

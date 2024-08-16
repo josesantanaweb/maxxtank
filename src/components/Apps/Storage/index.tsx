@@ -30,10 +30,10 @@ const Storage = () => {
         <p className="mb-10 text-[53px] text-black leading-[50px]">
           Tanques modulares pernados con recubrimiento para almacenamiento de agua potable.
         </p>
-        <img src="/images/app-tank-2.png" alt="tank" className="w-full h-[800px]" />
+        <img src="/images/app-tank-2.jpg" alt="tank" className="w-full h-[800px]" />
       </div>
       <div className="container">
-        <div className="grid grid-cols-4 gap-3">
+        <div className="grid grid-cols-4 gap-3 mb-10">
           {DATA.map((item, index) => (
             <div className="flex flex-col" key={index}>
               <h4 className="mb-3 text-[27px] font-[900] text-black">{item.title}</h4>
@@ -50,6 +50,12 @@ const Storage = () => {
               </Link>
             </div>
           </div>
+        </div>
+        <div className="flex justify-center gap-10 mb-14">
+          <img src="/images/logo.svg" alt="banner" className="w-[160px]" />
+          <h4 className="text-[48px] text-black leading-[60px] font-[600]">
+            Diámetros de 3 m hasta 30 m con capacidad de 20 m³ a 8000 m³ y alturas desde 3 m hasta 12 m.
+          </h4>
         </div>
       </div>
     </div>
