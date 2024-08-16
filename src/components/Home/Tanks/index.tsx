@@ -1,4 +1,5 @@
 import Button from '@/components/Common/Button'
+import { Link } from 'react-router-dom'
 const Tanks = () => {
   return (
     <div>
@@ -19,7 +20,9 @@ const Tanks = () => {
                 Diseño, instalación y uso de materiales certificados
               </h4>
               <div className="flex justify-center">
-                <Button>Saber más</Button>
+                <Link to="/contacto">
+                  <Button>Saber más</Button>
+                </Link>
               </div>
             </div>
             <div className="flex flex-col">

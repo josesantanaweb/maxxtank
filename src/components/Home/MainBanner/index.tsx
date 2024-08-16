@@ -1,7 +1,10 @@
 import Button from '@/components/Common/Button'
+import Video from '@/components/Common/Video'
+import { useState } from 'react'
 import { IoIosPlay } from 'react-icons/io'
 
 const MainBanner = () => {
+  const [openVideo, setOpenVideo] = useState(false)
   return (
     <div className="flex justify-center mb-10">
       <div className="container flex items-center justify-between h-[600px] gap-10 mx-auto">
@@ -14,18 +17,17 @@ const MainBanner = () => {
             Liderazgo tecnológico en el diseño e instalación de tanques para almacenamiento de agua y otros líquidos.
           </p>
           <div className="flex justify-end w-full">
-            <a href="https://youtu.be/ZswfHNxwZNU" target="_blank">
-              <Button>
-                Ver Video
-                <IoIosPlay size={18} />
-              </Button>
-            </a>
+            <Button onClick={() => setOpenVideo(!openVideo)}>
+              Ver Video
+              <IoIosPlay size={18} />
+            </Button>
           </div>
         </div>
         <div className="relative flex items-center w-[60%] 2xl:w-[65%] h-full overflow-hidden">
           <img src="/images/banner-main.png" className="object-cover w-full h-full" />
         </div>
       </div>
+      {openVideo && <Video setOpenVideo={setOpenVideo} />}
     </div>
   )
 }

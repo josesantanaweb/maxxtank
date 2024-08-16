@@ -1,4 +1,8 @@
+import Video from '@/components/Common/Video'
+import { useState } from 'react'
+
 const AboutUs = () => {
+  const [openVideo, setOpenVideo] = useState(false)
   return (
     <div>
       <div className="flex justify-center py-10 bg-gray-100">
@@ -49,17 +53,17 @@ const AboutUs = () => {
               <p className="text-sm text-black text-[16px] max-w-[200px] mb-3">
                 Conoce más en nuestro <br /> video corporativo
               </p>
-              <a
-                href="https://youtu.be/ZswfHNxwZNU"
-                target="_blank"
+              <button
+                onClick={() => setOpenVideo(!openVideo)}
                 className="text-black underline cursor-pointer font-[600] ml-24"
               >
                 Ver Video
-              </a>
+              </button>
             </div>
           </div>
         </div>
       </div>
+      {openVideo && <Video setOpenVideo={setOpenVideo} />}
     </div>
   )
 }

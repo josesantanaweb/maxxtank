@@ -1,5 +1,6 @@
 import Button from '@/components/Common/Button'
-import { Link } from 'react-router-dom'
+import Contact from '@/components/Common/Contact'
+import { useState } from 'react'
 
 const DATA = [
   {
@@ -20,6 +21,7 @@ const DATA = [
 ]
 
 const Storage = () => {
+  const [open, setOpen] = useState(false)
   return (
     <div className="flex flex-col items-center justify-center py-20 bg-white">
       <div className="container mb-10">
@@ -45,9 +47,7 @@ const Storage = () => {
               Estructura resistente y funcional para el almacenamiento de agua potable
             </h4>
             <div className="flex justify-start w-full">
-              <Link to="/contacto">
-                <Button>Cotizar</Button>
-              </Link>
+              <Button onClick={() => setOpen(!open)}>Cotizar</Button>
             </div>
           </div>
         </div>
@@ -58,6 +58,7 @@ const Storage = () => {
           </h4>
         </div>
       </div>
+      {open && <Contact setOpen={setOpen} />}
     </div>
   )
 }

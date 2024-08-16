@@ -1,5 +1,6 @@
 import Button from '@/components/Common/Button'
-import { Link } from 'react-router-dom'
+import Contact from '@/components/Common/Contact'
+import { useState } from 'react'
 const DATA = [
   {
     image: '01.jpg',
@@ -27,6 +28,7 @@ const DATA = [
 ]
 
 const Apps = () => {
+  const [open, setOpen] = useState(false)
   return (
     <div className="flex justify-center py-20 bg-gray-100">
       <div className="container">
@@ -45,9 +47,7 @@ const Apps = () => {
                 <h4 className="mb-5 text-[38px] font-[900] leading-[38px]">{item.title}</h4>
                 <p className="text-sm">{item.description}</p>
                 <div className="flex items-center justify-end gap-5">
-                  <Link to="/contacto">
-                    <Button>Cotizar</Button>
-                  </Link>
+                  <Button onClick={() => setOpen(!open)}>Cotizar</Button>
                   <a href="/aplicaciones" className="text-black underline cursor-pointer font-[600]">
                     Ver más
                   </a>
@@ -57,6 +57,7 @@ const Apps = () => {
           ))}
         </div>
       </div>
+      {open && <Contact setOpen={setOpen} />}
     </div>
   )
 }
