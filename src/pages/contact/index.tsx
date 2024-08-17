@@ -9,9 +9,8 @@ const ContactPage = () => {
       <div className="flex flex-col py-12">
         <div className="px-20 mx-20">
           <div className="flex justify-center gap-10 mb-14">
-            <img src="/images/logo.svg" alt="banner" className="w-[160px]" />
             <h4 className="text-[48px] text-black leading-[60px] font-[600]">
-              Estamos a su disposición, no dude en contactarnos e iniciamos juntos nuestro siguiente proyecto.
+              Estamos a su disposición, no dude en contactarnos e iniciemos juntos nuestro siguiente proyecto.
             </h4>
           </div>
         </div>

@@ -1,7 +1,7 @@
 import Button from '@/components/Common/Button'
 import { AiOutlineCloseCircle } from 'react-icons/ai'
 
-const Contact = ({ setOpen }: any) => {
+const Contact = ({ setOpen, title }: any) => {
   return (
     <div className="fixed top-0 z-10 flex items-center justify-center w-full h-full">
       <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-35" onClick={() => setOpen(false)}></div>
@@ -11,7 +11,8 @@ const Contact = ({ setOpen }: any) => {
             <AiOutlineCloseCircle />
           </span>
         </div>
-        <div className="w-full p-8 ">
+        <div className="w-full p-8">
+          {title && title !== '' && <h5 className="mb-5 text-xl text-black">{title}</h5>}
           <h2 className="mb-6 text-xl font-medium">Contáctanos</h2>
           <form className="space-y-4">
             <div className="flex space-x-4">

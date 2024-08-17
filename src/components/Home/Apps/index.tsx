@@ -4,26 +4,26 @@ import { useState } from 'react'
 const DATA = [
   {
     image: '01.jpg',
-    title: 'Almacenamiento de agua Potable',
-    description: ' asegurando que cada hogar, negocio y comunidad tenga acceso a agua limpia y segura en todo momento',
+    title: 'Almacenamiento de agua potable',
+    description: 'Asegurando que cada hogar, negocio y comunidad tenga acceso a agua limpia y segura en todo momento.',
   },
   {
     image: '02.jpg',
     title: 'Para redes contra incendios',
     description:
-      'garantizan un suministro inmediato y efectivo de agua en situaciones críticas, contribuyendo a la seguridad y protección de comunidades, industrias y edificaciones.',
+      'Garantizan un suministro inmediato y efectivo de agua en situaciones críticas, contribuyendo a la seguridad y protección de comunidades, industrias y edificaciones.',
   },
   {
     image: '03.jpg',
     title: 'Para usos industriales',
     description:
-      'optimizan la eficiencia y seguridad en la gestión de líquidos, contribuyendo al éxito y la sostenibilidad de operaciones industriales.',
+      'Optimizan la eficiencia y seguridad en la gestión de líquidos, contribuyendo al éxito y la sostenibilidad de operaciones industriales.',
   },
   {
     image: '04.jpg',
     title: 'Para otros usos',
     description:
-      'maximiza el rendimiento y la sostenibilidad de sus actividades en diversos sectores como agroindustria, ganadería, piscicultura, etc.',
+      'Maximiza el rendimiento y la sostenibilidad de sus actividades en diversos sectores como agroindustria, ganadería, piscicultura, etc.',
   },
 ]
 
@@ -45,12 +45,14 @@ const Apps = () => {
               </div>
               <div className="flex flex-col w-full">
                 <h4 className="mb-5 text-[38px] font-[900] leading-[38px]">{item.title}</h4>
-                <p className="text-sm">{item.description}</p>
+                <p className="mb-5 text-sm">{item.description}</p>
                 <div className="flex items-center justify-end gap-5">
                   <Button onClick={() => setOpen(!open)}>Cotizar</Button>
-                  <a href="/aplicaciones" className="text-black underline cursor-pointer font-[600]">
-                    Ver más
-                  </a>
+                  {(index === 0 || index === 1) && (
+                    <a href="/aplicaciones" className="text-black underline cursor-pointer font-[600]">
+                      Ver más
+                    </a>
+                  )}
                 </div>
               </div>
             </div>

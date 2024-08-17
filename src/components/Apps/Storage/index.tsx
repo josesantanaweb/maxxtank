@@ -20,10 +20,10 @@ const DATA = [
   },
 ]
 
-const Storage = () => {
+const Storage = ({ ref }: any) => {
   const [open, setOpen] = useState(false)
   return (
-    <div className="flex flex-col items-center justify-center py-20 bg-white">
+    <div className="flex flex-col items-center justify-center py-20 bg-white" ref={ref}>
       <div className="container mb-10">
         <h4 className="mb-8 text-[83px] font-[900] text-black leading-[80px]">
           ALMACENAMIENTO
@@ -38,7 +38,7 @@ const Storage = () => {
         <div className="grid grid-cols-4 gap-3 mb-10">
           {DATA.map((item, index) => (
             <div className="flex flex-col" key={index}>
-              <h4 className="mb-3 text-[27px] font-[900] text-black">{item.title}</h4>
+              <h4 className="mb-3 text-[22px] font-[900] text-black">{item.title}</h4>
               <p className="text-base text-black">{item.description}</p>
             </div>
           ))}
@@ -51,8 +51,7 @@ const Storage = () => {
             </div>
           </div>
         </div>
-        <div className="flex justify-center gap-10 mb-14">
-          <img src="/images/logo.svg" alt="banner" className="w-[160px]" />
+        <div className="flex justify-start gap-10 mb-14">
           <h4 className="text-[48px] text-black leading-[60px] font-[600]">
             Diámetros de 3 m hasta 30 m con capacidad de 20 m³ a 8000 m³ y alturas desde 3 m hasta 12 m.
           </h4>

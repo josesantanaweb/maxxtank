@@ -1,11 +1,12 @@
 // src/components/types/types.ts
 
 export interface ApplicationData {
-    image: string;
-    title: string;
-  };
-  // src/types/types.ts
+  image: string
+  title: string
+  ref?: string
+}
+// src/types/types.ts
 export interface GalleryImageData {
-  image: string;
-  alt: string;
+  image: string
+  alt: string
 }

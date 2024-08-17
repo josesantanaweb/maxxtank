@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import { FaAngleLeft, FaAngleRight } from 'react-icons/fa6'
 
 const DATA = [
@@ -43,13 +43,6 @@ const DATA = [
 const SLIDES = ['slider-1', 'slider-2', 'slider-3', 'slider-4', 'slider-5']
 const Components = () => {
   const [imagen, setImagen] = useState<string>('slider-1')
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setImagen(`${SLIDES[(SLIDES.indexOf(imagen) + 1) % SLIDES.length]}`)
-    }, 2000)
-    return () => clearInterval(interval)
-  }, [imagen])
 
   const handlePrev = () => setImagen(`${SLIDES[Math.max(SLIDES.indexOf(imagen) - 1, 0)]}`)
   const handleNext = () => setImagen(`${SLIDES[Math.min(SLIDES.indexOf(imagen) + 1, 4)]}`)

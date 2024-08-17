@@ -23,19 +23,19 @@ const Storage = () => {
     <div className="flex flex-col items-center justify-center py-20 bg-white">
       <div className="container mb-10">
         <h4 className="mb-8 text-[83px] font-[900] text-black leading-[80px]">
-          ALMACENAMIENTO PARA <br /> REDES CONTRA INCEDIO
+          ALMACENAMIENTO PARA <br /> REDES CONTRA INCENDIO
         </h4>
-        <p className="mb-10 text-[53px] text-black leading-[50px]">
+        <p className="mb-10 text-[53px] text-black leading-[60px]">
           Tanques modulares pernados según normativa NFPA-22 *Norma para tanques de agua para la protección contra
-          incencios.
+          incendios.
         </p>
         <img src="/images/app-tank-3.png" alt="tank" className="w-full h-[800px]" />
       </div>
-      <div className="container">
+      <div className="container mb-10">
         <div className="grid grid-cols-4 gap-3">
           {DATA.map((item, index) => (
             <div className="flex flex-col" key={index}>
-              <h4 className="mb-3 text-[27px] font-[900] text-black">{item.title}</h4>
+              <h4 className="mb-3 text-[22px] font-[900] text-black">{item.title}</h4>
               <p className="text-base text-black">{item.description}</p>
             </div>
           ))}
@@ -51,6 +51,11 @@ const Storage = () => {
             </div>
           </div>
         </div>
+      </div>
+      <div className="container flex justify-start gap-10 mb-14">
+        <h4 className="text-[48px] text-black leading-[60px] font-[600]">
+          Diámetros de 3 m hasta 30 m con capacidad de 20 m³ a 8000 m³ y alturas desde 3 m hasta 12 m.
+        </h4>
       </div>
     </div>
   )
