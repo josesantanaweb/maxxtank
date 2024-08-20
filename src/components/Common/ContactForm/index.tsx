@@ -11,8 +11,8 @@ const ContactPage = () => {
       <div className="flex flex-row items-baseline justify-between px-12">
         <div className="w-[40%]">
           <p className="pl-8 ">
-            En sus proyectos Maxxtank desea ser su aliado, ofreciéndole una solución ajustada a su necesidad, lo cual
-            lograremos con nuestro equipo de expertos.
+            Descubra con nosotros el tanque que requiere su proyecto, soluciones de alta ingeniería, calidad, seguridad
+            y eficiencia e costos. ¡Contáctenos para una cotización personalizada
           </p>
         </div>
         <div className="w-[40%] p-8 bg-gray-100">

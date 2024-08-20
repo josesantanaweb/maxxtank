@@ -45,7 +45,7 @@ const Apps = () => {
               </div>
               <div className="flex flex-col w-full">
                 <h4 className="mb-5 text-[38px] font-[900] leading-[38px]">{item.title}</h4>
-                <p className="mb-5 text-sm">{item.description}</p>
+                <p className="mb-5 text-lg">{item.description}</p>
                 <div className="flex items-center justify-end gap-5">
                   <Button onClick={() => setOpen(!open)}>Cotizar</Button>
                   {(index === 0 || index === 1) && (

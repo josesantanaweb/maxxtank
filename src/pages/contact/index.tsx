@@ -10,7 +10,7 @@ const ContactPage = () => {
         <div className="px-20 mx-20">
           <div className="flex justify-center gap-10 mb-14">
             <h4 className="text-[48px] text-black leading-[60px] font-[600]">
-              Estamos a su disposición, no dude en contactarnos e iniciemos juntos nuestro siguiente proyecto.
+              Liderazgo tecnológico en el diseño e instalación de tanques para almacenamiento de agua y otros líquidos."
             </h4>
           </div>
         </div>

@@ -47,8 +47,8 @@ const Advantages = () => {
               key={index}
               className="flex items-center mx-auto max-w-[90rem] border-t border-dashed py-6 border-black justify-around"
             >
-              <h6 className="text-black font-[900] text-[27px]">{item.title}</h6>
-              <p className="text-black text-[20px] w-[50%]">{item.description}</p>
+              <h6 className="text-black font-[900] text-[27px] w-[50%] px-20">{item.title}</h6>
+              <p className="text-black text-[20px] w-[50%] ">{item.description}</p>
             </div>
           ))}
         </div>

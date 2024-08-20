@@ -53,9 +53,11 @@ const Storage = () => {
         </div>
       </div>
       <div className="container flex justify-start gap-10 mb-14">
-        <h4 className="text-[48px] text-black leading-[60px] font-[600]">
-          Diámetros de 3 m hasta 30 m con capacidad de 20 m³ a 8000 m³ y alturas desde 3 m hasta 12 m.
-        </h4>
+        <div className="text-[40px] text-black leading-[60px] font-[600]">
+          <li>Diámetros desde 3 m hasta 30 m</li>
+          <li>Capacidades desde 20 m3 hasta 8000 m3</li>
+          <li>Altura desde 3 m hasta 12 m</li>
+        </div>
       </div>
     </div>
   )
