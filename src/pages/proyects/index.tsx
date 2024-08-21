@@ -48,8 +48,10 @@ const ProjectsPage = () => {
     <main>
       <div className="flex justify-center py-20">
         <div className="container">
-          <h4 className="mb-20 text-[83px] font-[900] text-black border-b border-dashed border-black">PROYECTOS</h4>
-          <div className="grid items-center grid-cols-4 gap-12">
+          <h4 className="mb-20 text-[40px] lg:text-[83px] font-[900] text-black border-b border-dashed border-black">
+            PROYECTOS
+          </h4>
+          <div className="grid items-center grid-cols-1 gap-12 lg:grid-cols-4">
             {DATA.map((item, index) => (
               <div className="flex flex-col" key={index}>
                 <img src={`/images/${item.image}`} alt="app" className="w-full h-[200px] mb-3" />

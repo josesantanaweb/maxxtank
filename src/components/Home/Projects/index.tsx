@@ -76,9 +76,9 @@ const DATA = [
 const Projects = () => {
   return (
     <div className="flex justify-center py-20">
-      <div className="container">
-        <h4 className="mb-20 text-[83px] font-[900] text-black">PROYECTOS</h4>
-        <div className="grid items-center grid-cols-4 gap-8">
+      <div className="container px-5 lg:px-0">
+        <h4 className="mb-20 text-[40px] lg:text-[83px] font-[900] text-black">PROYECTOS</h4>
+        <div className="grid items-center grid-cols-1 gap-8 lg:-cols-4">
           {DATA.map((item, index) => (
             <div className="flex flex-col" key={index}>
               <img src={`/images/tanques/${item.image}`} alt="" className="mb-3 md:h-[230px] 2xl:h-[280px]" />

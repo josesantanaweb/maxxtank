@@ -3,19 +3,19 @@ import Button from '@/components/Common/Button'
 const ContactPage = () => {
   return (
     <div className="py-10 bg-gray-100">
-      <div className="px-20 pt-12">
+      <div className="px-10 pt-12 lg:px-20">
         <div className="border-b-2 border-gray-400 border-dashed">
-          <h4 className="pt-2 mb-6 text-[83px] font-[900]">CONTACTO</h4>
+          <h4 className="pt-2 mb-6 text-[40px] lg:text-[83px] font-[900]">CONTACTO</h4>
         </div>
       </div>
-      <div className="flex flex-row items-baseline justify-between px-12">
-        <div className="w-[40%]">
+      <div className="flex flex-col items-baseline justify-between lg:px-12 lg:flex-row">
+        <div className="lg:w-[40%]">
           <p className="pl-8 ">
             Descubra con nosotros el tanque que requiere su proyecto, soluciones de alta ingeniería, calidad, seguridad
             y eficiencia e costos. ¡Contáctenos para una cotización personalizada
           </p>
         </div>
-        <div className="w-[40%] p-8 bg-gray-100">
+        <div className="lg:w-[40%] p-8 bg-gray-100">
           <h2 className="mb-6 text-xl font-medium">Contáctanos</h2>
           <form className="space-y-4">
             <div className="flex space-x-4">

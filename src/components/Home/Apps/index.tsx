@@ -32,11 +32,11 @@ const Apps = () => {
   return (
     <div className="flex justify-center py-20 bg-gray-100">
       <div className="container">
-        <h4 className="mb-20 text-[70px] font-[900] text-black">APLICACIONES</h4>
+        <h4 className="mb-20 text-[40px] lg:text-[70px] font-[900] text-black px-5 lg:px-0">APLICACIONES</h4>
         <div className="grid items-center grid-cols-1 gap-12 2xl:grid-cols-2 apps-separator">
           {DATA.map((item, index) => (
-            <div className="flex items-start gap-8" key={index}>
-              <div className="w-[600px] h-[230px]">
+            <div className="flex flex-col items-start gap-8 px-5 lg:px-0" key={index}>
+              <div className="w-full lg:w-[600px] h-[230px]">
                 <img
                   src={`/images/aplicaciones/${item.image}`}
                   alt="Agua Potable"

@@ -29,7 +29,7 @@ const Header = () => {
     <header className="">
       <div className="flex items-center justify-center bg-gray-100">
         <div className="container relative flex justify-center p-3">
-          <p className="flex items-center gap-4 text-sm font-semibold text-black">
+          <p className="flex flex-col items-center gap-4 text-sm font-semibold text-black lg:flex-row">
             <span>Tel: +57 321 3721522</span>
             <span>contacto@maxxtank.com.co </span>
             <Link to="/contacto" className="underline cursor-pointer">
@@ -42,7 +42,7 @@ const Header = () => {
         </div>
       </div>
       <div className="flex justify-center py-10">
-        <div className="container flex items-center justify-between mx-auto">
+        <div className="container flex flex-col items-center justify-between gap-10 mx-auto lg:flex-row lg:gap-0">
           <img src="/images/logo.svg" className="w-[120px]" />
           <nav className="flex gap-4">
             {MENU_DATA.map((item, index) => (
@@ -55,7 +55,7 @@ const Header = () => {
               </Link>
             ))}
           </nav>
-          <span className="text-black">
+          <span className="hidden text-black lg:block">
             <IoIosSearch size={24} />
           </span>
         </div>
