@@ -14,7 +14,7 @@ const DATA: ApplicationData[] = [
     ref: 'almacenamiento',
   },
   {
-    image: '02.jpg',
+    image: '02.png',
     title: 'Para redes contra incendios',
     ref: 'incendios',
   },
@@ -24,7 +24,7 @@ const DATA: ApplicationData[] = [
     ref: 'industriales',
   },
   {
-    image: '04.jpg',
+    image: '04.png',
     title: 'Para otros usos',
     ref: 'otros',
   },

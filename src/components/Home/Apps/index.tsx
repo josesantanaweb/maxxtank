@@ -8,7 +8,7 @@ const DATA = [
     description: 'Asegurando que cada hogar, negocio y comunidad tenga acceso a agua limpia y segura en todo momento.',
   },
   {
-    image: '02.jpg',
+    image: '02.png',
     title: 'Para redes contra incendios',
     description:
       'Garantizan un suministro inmediato y efectivo de agua en situaciones críticas, contribuyendo a la seguridad y protección de comunidades, industrias y edificaciones.',
@@ -20,7 +20,7 @@ const DATA = [
       'Optimizan la eficiencia y seguridad en la gestión de líquidos, contribuyendo al éxito y la sostenibilidad de operaciones industriales.',
   },
   {
-    image: '04.jpg',
+    image: '04.png',
     title: 'Para otros usos',
     description:
       'Maximiza el rendimiento y la sostenibilidad de sus actividades en diversos sectores como agroindustria, ganadería, piscicultura, etc.',
