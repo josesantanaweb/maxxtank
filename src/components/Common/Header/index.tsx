@@ -6,22 +6,22 @@ const MENU_DATA = [
     name: 'Home',
     url: '/',
   },
-  // {
-  //   name: 'Aplicaciones',
-  //   url: '/aplicaciones',
-  // },
-  // {
-  //   name: 'Tanques',
-  //   url: '/tanques',
-  // },
-  // {
-  //   name: 'Proyectos',
-  //   url: '/proyectos',
-  // },
-  // {
-  //   name: 'Contacto',
-  //   url: '/contacto',
-  // },
+  {
+    name: 'Aplicaciones',
+    url: '/aplicaciones',
+  },
+  {
+    name: 'Tanques',
+    url: '/tanques',
+  },
+  {
+    name: 'Proyectos',
+    url: '/proyectos',
+  },
+  {
+    name: 'Contacto',
+    url: '/contacto',
+  },
 ]
 
 const Header = () => {
