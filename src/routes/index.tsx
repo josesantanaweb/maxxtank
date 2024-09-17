@@ -1,4 +1,3 @@
-
 export const routes = [
   // {
   //   path: '/',
@@ -24,5 +23,4 @@ export const routes = [
   //   path: '/detalles',
   //   element: <ProjectDetailsPage />,
   // },
-
 ]

@@ -1,6 +1,21 @@
 import Button from '@/components/Common/Button'
+import { useState } from 'react'
 
 const ContactPage = () => {
+  const [firstName, setFirstName] = useState('')
+  const [lastName, setLastName] = useState('')
+  const [phone, setPhone] = useState('')
+  const [email, setEmail] = useState('')
+  const [company, setCompany] = useState('')
+  const [subject, setSubject] = useState('')
+  const [message, setMessage] = useState('')
+
+  const mailto = `mailto:contacto@maxxtank.com?cc=${encodeURIComponent(email)}&subject=${encodeURIComponent(
+    subject
+  )}&body=${encodeURIComponent(message)}%0ANombre%3A ${encodeURIComponent(firstName)} ${encodeURIComponent(
+    lastName
+  )}%0ACompania%3A ${encodeURIComponent(company)}%0ATel%C3%A9fono%3A ${encodeURIComponent(phone)}`
+
   return (
     <div className="py-10 bg-gray-100">
       <div className="px-10 pt-12 lg:px-20">
@@ -22,6 +37,7 @@ const ContactPage = () => {
               <div className="w-1/2">
                 <input
                   type="text"
+                  onChange={(e) => setFirstName(e.target.value)}
                   placeholder="Nombre(s)"
                   className="w-full px-4 py-2 bg-gray-100 border border-black focus:outline-none focus:ring-2 focus:ring-blue-400 placeholder:text-black"
                 />
@@ -29,6 +45,7 @@ const ContactPage = () => {
               <div className="w-1/2">
                 <input
                   type="text"
+                  onChange={(e) => setLastName(e.target.value)}
                   placeholder="Apellido(s)"
                   className="w-full px-4 py-2 bg-gray-100 border border-black placeholder:text-black focus:outline-none focus:ring-2 focus:ring-blue-400"
                 />
@@ -37,6 +54,7 @@ const ContactPage = () => {
             <div>
               <input
                 type="email"
+                onChange={(e) => setEmail(e.target.value)}
                 placeholder="Correo electrónico"
                 className="w-full px-4 py-2 bg-gray-100 border border-black placeholder:text-black focus:outline-none focus:ring-2 focus:ring-blue-400"
               />
@@ -45,6 +63,7 @@ const ContactPage = () => {
               <div className="w-1/2">
                 <input
                   type="text"
+                  onChange={(e) => setPhone(e.target.value)}
                   placeholder="Número de teléfono"
                   className="w-full px-4 py-2 bg-gray-100 border border-black placeholder:text-black focus:outline-none focus:ring-2 focus:ring-blue-400"
                 />
@@ -52,6 +71,7 @@ const ContactPage = () => {
               <div className="w-1/2">
                 <input
                   type="text"
+                  onChange={(e) => setCompany(e.target.value)}
                   placeholder="Compañía"
                   className="w-full px-4 py-2 bg-gray-100 border border-black placeholder:text-black focus:outline-none focus:ring-2 focus:ring-blue-400"
                 />
@@ -60,6 +80,7 @@ const ContactPage = () => {
             <div>
               <input
                 type="text"
+                onChange={(e) => setSubject(e.target.value)}
                 placeholder="Asunto"
                 className="w-full px-4 py-2 bg-gray-100 border border-black placeholder:text-black focus:outline-none focus:ring-2 focus:ring-blue-400"
               />
@@ -67,11 +88,14 @@ const ContactPage = () => {
             <div>
               <textarea
                 placeholder="Mensaje"
+                onChange={(e) => setMessage(e.target.value)}
                 className="w-full px-4 py-2 bg-gray-100 border border-black placeholder:text-black focus:outline-none focus:ring-2 focus:ring-blue-400"
                 rows={4}
               ></textarea>
             </div>
-            <Button>Enviar</Button>
+            <a href={mailto}>
+              <Button>Enviar</Button>
+            </a>
           </form>
         </div>
       </div>
