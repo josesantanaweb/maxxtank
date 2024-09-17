@@ -6,10 +6,10 @@ const MENU_DATA = [
     name: 'Home',
     url: '/',
   },
-  {
-    name: 'Aplicaciones',
-    url: '/aplicaciones',
-  },
+  // {
+  //   name: 'Aplicaciones',
+  //   url: '/aplicaciones',
+  // },
   // {
   //   name: 'Tanques',
   //   url: '/tanques',
@@ -18,10 +18,10 @@ const MENU_DATA = [
   //   name: 'Proyectos',
   //   url: '/proyectos',
   // },
-  {
-    name: 'Contacto',
-    url: '/contacto',
-  },
+  // {
+  //   name: 'Contacto',
+  //   url: '/contacto',
+  // },
 ]
 
 const Header = () => {
