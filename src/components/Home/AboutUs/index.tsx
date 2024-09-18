@@ -10,7 +10,7 @@ const AboutUs = () => {
           <h4 className="text-[40px] lg:text-[80px] font-[900] text-black text-center lg:text-left">SOBRE MAXXTANK</h4>
         </div>
       </div>
-      <div className="relative lg:h-[1000px] w-full">
+      <div className="relative lg:h-[1000px] 2xl:h-full w-full">
         <img src="/images/banner-about-us.png" alt="banner" className="w-full h-full" />
       </div>
       <div className="flex justify-center py-10 bg-gray-100">
