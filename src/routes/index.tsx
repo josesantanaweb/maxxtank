@@ -1,5 +1,4 @@
-import { AppsPage, HomePage, ProjectsPage, ContactPage, TanksPage, ProjectDetailsPage } from '@/pages'
-
+import { AppsPage, ContactPage, HomePage, ProjectDetailsPage, ProjectsPage, TanksPage } from '@/pages'
 export const routes = [
   {
     path: '/',
@@ -25,5 +24,4 @@ export const routes = [
     path: '/detalles',
     element: <ProjectDetailsPage />,
   },
-
 ]
